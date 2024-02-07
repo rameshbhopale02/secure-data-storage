@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.QR {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px; /* Spacing between elements in the QR container */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#key {
+    color: white;
+    font-size: 30px;
+    text-decoration: dotted;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Space between the buttons and QR key */
+}
+
+#copy, #copy2 {
+    background-color: aquamarine;
+    border: none;
+    padding: 15px 25px; /* Adjust padding for a better button size */
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#copy:hover, #copy2:hover {
+    transform: scale(1.1); /* Slightly enlarge buttons on hover */
+}
+
+#copy2 {
+    background-color: rgb(172, 127, 255); /* Different color for logout button */
+}

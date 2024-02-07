@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.services {
+    width: 80%;
+    max-width: 500px; /* Adjusted for larger screens */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #254f85d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-title {
+    font-size: 28px;
+    font-family: 'Lora', serif;
+    color: #2c0e62;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    max-width: 500px; /* Limit button width */
+    background-color: #4991ff;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0 20px 30px #1a488e0f;
+    background-color: #1652f0;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .services {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/static/css/sign_in_page.css" />
+  </head>
+  <body>
+    <div class="sign_in">
+      <p>Sign In</p>
+      <form action="" method="post">
+        <input type="text" name="userid" id="userid" placeholder="Username" />
+        <input type="text" name="email" id="email" placeholder="Email Id" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <div class="button-container">
+          <button id="btn1" type="submit" onclick="showAlertAndSubmit()">Sign In</button>
+          <button
+            id="backButton"
+            type="button"
+            onclick="window.location.href='/'"
+          >
+            Back
+          </button>
+        </div>
+      </form>
+    </div>
+    <script>
+      function showAlertAndSubmit() {
+        alert("User Register Successful!");
+    
+      }
+    </script>
+  </body>
+</html>

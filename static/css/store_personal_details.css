@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.services-title {
+    font-size: 28px;
+    font-family: 'Lora', serif;
+    color: #2c0e62;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #254f85d7;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+#personal {
+    font-size: 16px;
+    color: dimgray;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+}
+
+#personal > label {
+    margin-top: 15px;
+    display: block;
+    font-size: 16px;
+}
+
+#personal > input,
+#personal > select {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#but {
+    background-color: #4991ff;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#but:hover {
+    box-shadow: 0 20px 30px #1a488e0f;
+    background-color: #1652f0;
+}
+
+/* Gender and Date input styles */
+#gender, #dob {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+        top: 10%;
+    }
+
+    #personal {
+        font-size: 14px;
+    }
+
+    #but {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #personal > input,
+    #personal > select {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #personal > label {
+        font-size: 14px;
+    }
+
+    #personal > input,
+    #personal > select {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    #but {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

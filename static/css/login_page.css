@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Slab&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+}
+
+.login {
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit size for large screens */
+    background-color: rgb(174, 201, 202);
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+#p1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#p2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #555;
+}
+
+.login input {
+    width: calc(100% - 40px); /* Responsive input width */
+    max-width: 350px; /* Limit input width */
+    margin: 10px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.login input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4991ff;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px auto; /* Ensures buttons stack vertically */
+    width: calc(100% - 40px); /* Match input width */
+    max-width: 350px; /* Align width with inputs */
+}
+
+#btn1 {
+    width: calc(100% - 50%); /* Match input width */
+    background-color: #4991ff;
+    color: white;
+}
+
+#btn1:hover {
+    background-color: #1652f0;
+    box-shadow: 0 10px 20px rgba(26, 72, 142, 0.1);
+}
+
+#btn2 {
+    background-color: #4991ff;
+    color: white;
+}
+
+#btn2:hover {
+    background-color: #1652f0;
+    box-shadow: 0 10px 20px rgba(26, 72, 142, 0.1);
+}
+
+#btn2 a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Ensure the link fills the button */
+}
+
+#backButton {
+    width: calc(100% - 50%); /* Match input width */
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#backButton:hover {
+    background-color: #d6d6d6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

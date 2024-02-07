@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+    <link rel="stylesheet" href="/static/css/fetch_data.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="services-title">Fetch Details</h1>
+        <form action="#" id="fetch" method="POST">
+            <input type="text" name="userid" id="userid" placeholder=" Enter Username">
+            <input type="text" name="private_key" id="private_key" placeholder=" Enter The Private Key">
+            <input type="text" name="fname" id="fname" placeholder=" Enter The First Name">
+            <input type="text" name="lname" id="lname" placeholder=" Enter The Last Name">
+            <label for="type">Select The Data To Fetch</label>
+            <select name="data_type" id="data_type">
+                <option name="personal" value="personal">Personal Details</option>
+                <option name="bank" value="bank">Bank Details</option>
+            </select>
+            <br>
+            <button id="but" type="submit" onclick="showAlertAndSubmit()">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    function showAlertAndSubmit() {
+        alert("Data Fetch Successfully! Click Download to Save Details");
+    
+    }
+</script>
+    
+</html>

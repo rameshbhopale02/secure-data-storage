@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="/static/css/store_personal_details.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="services-title">Store Personal Info</h1>
+      <form action="" id="personal" method="post">
+        <label for="fname">Enter First Name</label>
+        <input type="text" name="fname" id="fname" placeholder=" First Name" />
+        <label for="mname">Enter Middle Name</label>
+        <input type="text" name="mname" id="mname" placeholder=" Middle Name" />
+        <label for="lname">Enter Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder=" Last Name" />
+        <label for="gender">Enter Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="nonbi">Non-binary</option>
+          <option value="trans">Transgender</option>
+        </select>
+        <label for="dob">Enter Date Of Birth</label>
+        <input type="date" name="dob" id="dob" />
+        <label for="address">Enter Address</label>
+        <input type="text" name="address" id="address" placeholder=" Address" />
+        <label for="mobile">Enter Mobile Number</label>
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          placeholder=" Mobile Number"
+        />
+        <label for="email">Enter Email Id</label>
+        <input type="email" name="email" id="email" placeholder=" Email Id" />
+        <label for="adhar">Enter Addhar Number</label>
+        <input
+          type="text"
+          name="addhar"
+          id="addhar"
+          placeholder=" Addhar Number"
+        />
+        <label for="pan">Enter PAN Number</label>
+        <input type="text" name="pan" id="pan" placeholder=" PAN Number" />
+        <button id="but" type="submit" onclick="showAlertAndSubmit()">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    function showAlertAndSubmit() {
+      alert("Data Store Successful!");
+    }
+  </script>
+</html>

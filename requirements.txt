@@ -1,0 +1,6 @@
+Flask
+PyYAML
+cryptography
+pycryptodome
+qrcode
+pyminizip

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="/static/css/login_page.css">
+    </head>
+    <body>
+        <div class="login">
+            <p id="p1">Log In</p>
+            <p id="p2">Login here using password and private key</p>
+            <form action="" method="post">
+                <input type="text" name="userid" id="userid" placeholder="Username">
+                <input type="text" name="key" id="key" placeholder="Private Key">
+                <button id="btn1" type="submit">Log In</button>
+                <button id="btn2" type="button">
+                    <a href="{{url_for('create_account')}}"> New User ? Register Here</a>
+                </button>
+                <button id="backButton" type="button" onclick="window.location.href='/'">Back</button>
+            </form>
+        </div>
+    </body>
+    <script>
+          const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                alert('Login Successful!');
+            }
+    </script>
+    
+</html>

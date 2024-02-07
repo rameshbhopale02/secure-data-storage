@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Details</title>
+        <link rel="stylesheet" href="/static/css/store_bank_details.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="services-title">Store Bank Info</h1>
+            <form action="" id="bank" method="POST">
+                <label for="fname">Enter First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <label for="lname">Enter Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                <label for="bname">Enter Bank Name</label> 
+                <input type="text" id="bname" name="bname" placeholder="Bank Name">
+                <label for="address">Enter Address Of Bank</label> 
+                <input type="text" id="address" name="address" placeholder="Address">
+                <label for="acc">Enter Account Number</label> 
+                <input type="number" id="acc" name="acc" placeholder="Account Number">
+                <label for="ifsc">Enter IFSC Code</label> 
+                <input type="text" id="ifsc" name="ifsc" placeholder="IFSC Code">
+                <label for="micr">Enter MICR Code</label> 
+                <input type="text" id="micr" name="micr" placeholder="MICR Code">
+                <label for="bcode">Enter Bank Branch Code</label> 
+                <input type="text" id="bcode" name="bcode" placeholder="Bank Branch Code">
+                <button id="but" type="submit" onclick="showAlertAndSubmit()">Submit</button>
+            </form>
+        </div>
+    </body>
+    <script>
+        function showAlertAndSubmit() {
+            alert("Data Store Successful!");
+          
+        }
+    </script>
+</html>

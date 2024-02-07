@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code</title>
+    <link rel="stylesheet" href="/static/css/generate_qr.css" />
+    <!-- {{ url_for('static', filename='qrstyle.css') }} -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="QR">
+      <img src="/static/{{ variable[0] }}.png" alt="QR Code" />
+      <p id="key">{{ variable[1] }}</p>
+      <div class="button-container">
+        <button id="copy" onclick="copyText()">Copy Key</button>
+        <button id="copy2" onclick="goHome(), showAlertAndSubmit()">Logout</button>
+      </div>
+    </div>
+
+    <script>
+      function copyText() {
+        var Text = document.getElementById("key").innerHTML;
+        navigator.clipboard.writeText(Text);
+      }
+
+      function goHome() {
+        window.location.href = "/"; // Redirect to the home page
+      }
+      function showAlertAndSubmit() {
+        alert("Logout Successful!");
+        document.getElementById("patient-form").submit();
+      }
+    </script>
+  </body>
+</html>

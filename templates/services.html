@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="/static/css/services.css">
+    </head>
+    <body>
+        <div class="services">
+            <h1 class="services-title">Our Services</h1>
+            <form id="serve" action="" method="post">
+                <button name="bank" type="submit"><a href="{{ url_for('result_bank') }}">Store Bank Details</a></button>
+                <button name="personal" type="submit"><a href="{{ url_for('result_personal') }}">Store Personal Details</a></button>
+                <button name="fetch" type="submit"><a href="{{ url_for('fetch_data') }}">Fetch Data</a></button>
+                <button name="fetch" type="submit" onclick="showAlertAndSubmit()"><a href="{{ url_for('logout') }}">Logout</a></button>
+            </form>
+        </div>
+    </body>
+    <script>
+        function showAlertAndSubmit() {
+            alert("Logout Successful!");
+            document.getElementById("patient-form").submit(); 
+        }
+    </script>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Slab&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5; /* Soft background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vertically centered layout */
+}
+
+.sign_in {
+    width: 90%; /* Responsive width */
+    max-width: 350px; /* Limit maximum size */
+    background-color: rgb(174, 201, 202);
+    border-radius: 30px;
+    padding: 30px 20px; /* Add vertical padding */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align content */
+}
+
+.sign_in p {
+    font-size: 2rem; /* Scales with viewport */
+    font-weight: bold;
+    color: #333; /* Darker font color for readability */
+    margin-bottom: 20px;
+}
+
+.sign_in input {
+    width: 100%; /* Full width inside the container */
+    max-width: 300px; /* Limit input width */
+    margin: 10px 0; /* Equal spacing around inputs */
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Add slight shadow to inputs */
+    transition: box-shadow 0.3s ease;
+}
+
+.sign_in input:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px #4991ff; /* Glow effect on focus */
+}
+
+/* Flex container for buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px; /* Adds spacing between buttons */
+}
+
+#btn1, #backButton {
+    flex: 1; /* Ensure buttons take equal space */
+    max-width: 150px; /* Limit button width */
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    text-align: center; /* Ensure button text is centered */
+}
+
+#btn1 {
+    background-color: #4991ff;
+    color: white;
+}
+
+#btn1:hover {
+    box-shadow: 0 10px 20px rgba(26, 72, 142, 0.1);
+    background-color: #1652f0;
+}
+
+#backButton {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#backButton:hover {
+    background-color: #d6d6d6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
